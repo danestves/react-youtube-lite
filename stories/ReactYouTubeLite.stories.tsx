@@ -3,7 +3,7 @@ import { Meta, Story } from '@storybook/react';
 import { ReactYouTubeLite, Props } from '../src';
 
 const meta: Meta = {
-  title: 'React YouTube Lite',
+  title: 'Component / React YouTube Lite',
   component: ReactYouTubeLite,
   parameters: {
     controls: { expanded: true },
