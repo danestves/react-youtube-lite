@@ -26,11 +26,11 @@ Default.args = {
   url: 'https://www.youtube.com/watch?v=DVQTGidS1yk',
 };
 
-export const NoCookies = Template.bind({});
+export const NoCookie = Template.bind({});
 
-NoCookies.args = {
+NoCookie.args = {
   url: 'https://www.youtube.com/watch?v=DVQTGidS1yk',
-  noCookies: true,
+  noCookie: true,
 };
 
 export const NoAd = Template.bind({});
