@@ -25,3 +25,17 @@ export const Default = Template.bind({});
 Default.args = {
   url: 'https://www.youtube.com/watch?v=DVQTGidS1yk',
 };
+
+export const NoCookies = Template.bind({});
+
+NoCookies.args = {
+  url: 'https://www.youtube.com/watch?v=DVQTGidS1yk',
+  noCookies: true,
+};
+
+export const NoAd = Template.bind({});
+
+NoAd.args = {
+  url: 'https://www.youtube.com/watch?v=DVQTGidS1yk',
+  adNetwork: false,
+};
