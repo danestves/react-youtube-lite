@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -7,6 +7,11 @@
     "dist",
     "src"
   ],
+  "homepage": "https://danestves.github.io/react-youtube-lite",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danestves/react-youtube-lite.git"
+  },
   "engines": {
     "node": ">=10"
   },
