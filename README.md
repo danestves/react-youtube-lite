@@ -7,6 +7,9 @@
   <a href="https://www.npmjs.org/package/react-youtube-lite">
     <img src="https://img.shields.io/npm/dm/react-youtube-lite.svg" alt="Monthly download on NPM" />
   </a>
+  <a href="https://circleci.com/gh/danestves/react-youtube-lite" target="_blank">
+    <img alt="CircleCI" src="https://img.shields.io/circleci/build/github/danestves/react-youtube-lite">
+  </a>
   <a href="fffff" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
