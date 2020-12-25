@@ -20,7 +20,7 @@
 
 A responsive react component to render YouTube videos in a lazyload mode to get a high speed load website.
 
-You can see a [demo here](demo)
+You can see a [demo here](https://danestves.github.io/react-youtube-lite)
 
 ## ⏳ Installation
 

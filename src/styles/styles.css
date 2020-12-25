@@ -1,31 +1,10 @@
 /* Styles for Storybook */
 
-.aspect-ratio-none {
-  padding-bottom: 0;
-}
-
-.aspect-ratio-square {
-  padding-bottom: 100%;
-}
-
-.aspect-ratio-16\/9 {
-  padding-bottom: 56.25%;
-}
-
-.aspect-ratio-4\/3 {
-  padding-bottom: 75%;
-}
-
-.aspect-ratio-21\/9 {
-  padding-bottom: 42.86%;
-}
-
 .embed-responsive {
   position: relative !important;
   display: block !important;
   height: 0 !important;
   padding: 0 !important;
-  padding-bottom: 56.25% !important;
   overflow: hidden !important;
 }
 
@@ -41,6 +20,26 @@
   height: 100%;
   width: 100%;
   border: 0;
+}
+
+.aspect-ratio-none {
+  padding-bottom: 0 !important;
+}
+
+.aspect-ratio-square {
+  padding-bottom: 100% !important;
+}
+
+.aspect-ratio-16\/9 {
+  padding-bottom: 56.25% !important;
+}
+
+.aspect-ratio-4\/3 {
+  padding-bottom: 75% !important;
+}
+
+.aspect-ratio-21\/9 {
+  padding-bottom: 42.86% !important;
 }
 
 /* Components Styles */
