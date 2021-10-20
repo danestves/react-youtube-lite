@@ -19,15 +19,16 @@
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
-    "lint": "tsdx lint",
+    "lint": "tsdx lint src",
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "release": "standard-version"
   },
   "peerDependencies": {
-    "react": ">=16"
+    "react": ">=17"
   },
   "husky": {
     "hooks": {
@@ -41,7 +42,7 @@
     "trailingComma": "es5"
   },
   "name": "react-youtube-lite",
-  "author": "Daniel Esteves",
+  "author": "Daniel Esteves <danestves@gmail.com>",
   "module": "dist/react-youtube-lite.esm.js",
   "size-limit": [
     {
@@ -54,33 +55,41 @@
     }
   ],
   "devDependencies": {
-    "@babel/core": "7.12.10",
-    "@size-limit/preset-small-lib": "^4.9.1",
+    "@babel/core": "7.15.8",
+    "@size-limit/preset-small-lib": "^6.0.3",
     "@storybook/addon-essentials": "6.3.12",
     "@storybook/addon-info": "^5.3.21",
     "@storybook/addon-links": "6.3.12",
+    "@storybook/addon-postcss": "^2.0.0",
     "@storybook/addons": "6.3.12",
     "@storybook/react": "6.3.12",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "autoprefixer": "9.0.0",
+    "@types/react": "^17.0.30",
+    "@types/react-dom": "^17.0.10",
+    "autoprefixer": "10.3.7",
+    "babel-jest": "^27.3.1",
     "babel-loader": "8.2.2",
-    "cssnano": "^4.1.10",
-    "husky": "^4.3.6",
+    "cssnano": "^5.0.8",
+    "eslint": "^8.0.1",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.2",
     "identity-obj-proxy": "^3.0.0",
+    "postcss": "^8.3.9",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-is": "^17.0.1",
-    "rollup-plugin-postcss": "^4.0.0",
-    "size-limit": "^4.9.1",
-    "source-map-support": "^0.5.19",
+    "react-dom": "^17.0.2",
+    "react-is": "^17.0.2",
+    "rollup-plugin-postcss": "^4.0.1",
+    "size-limit": "^6.0.3",
+    "source-map-support": "^0.5.20",
+    "standard-version": "^9.3.2",
     "tsdx": "^0.14.1",
-    "tslib": "^2.0.3",
-    "typescript": "^4.1.3"
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.4"
   },
   "jest": {
     "moduleNameMapper": {
       "\\.(css|less)$": "identity-obj-proxy"
     }
-  }
+  },
+  "dependencies": {}
 }
