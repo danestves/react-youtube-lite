@@ -10277,10 +10277,10 @@ nanomatch@^1.2.9:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-nanospinner@^0.3.0:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/nanospinner/-/nanospinner-0.3.2.tgz#501ac31b48bf47be8e25fc07543b5fe620a742e8"
-  integrity sha512-ToZuxmiRuuNe3McB7CVzP7PCOhzWAy4qx6ndb5QWxJFp6INdg3n0mVm8f7HR6Fz8raRg3/vzglIZYrOSna8vkg==
+nanospinner@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/nanospinner/-/nanospinner-0.4.0.tgz#f544f71fb990423528b8f6dd6c26134cf9f21659"
+  integrity sha512-FhxiB9PcEztMw6XfQDSLJBMlmN4n7B2hl/oiK4Hy9479r1+df0i2099DgcEx+m6yBfBJVUuKpILvP8fM3rK3Sw==
   dependencies:
     picocolors "^1.0.0"
 
@@ -12961,18 +12961,18 @@ sisteransi@^1.0.5:
   resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-1.0.5.tgz#134d681297756437cc05ca01370d3a7a571075ed"
   integrity sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==
 
-size-limit@^6.0.3:
-  version "6.0.3"
-  resolved "https://registry.yarnpkg.com/size-limit/-/size-limit-6.0.3.tgz#980e91993a409cb80dd4776fe3e2867afa4d55d0"
-  integrity sha512-bvZuNG1dPJ8GTkFq3lXkW8H1+ybVV3D7GecowAGlfbNO2T1Mcvy8kCoCpwVOWnq1wV+TraRUtExnQzIyyV94NQ==
+size-limit@6.0.4:
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/size-limit/-/size-limit-6.0.4.tgz#f3345206d8c25485d0d31ea41622761a3a1aad93"
+  integrity sha512-zo/9FrXzetvZGFJnd1LC4mR9GvirElALlerMY3EOwEGdW7Lwgl2WT0hTRC2559ZR2PGfRpnXEgAFkayGAJOebg==
   dependencies:
     bytes-iec "^3.1.1"
     chokidar "^3.5.2"
     ci-job-number "^1.2.2"
     globby "^11.0.4"
     lilconfig "^2.0.3"
-    nanospinner "^0.3.0"
-    picocolors "^0.2.1"
+    nanospinner "^0.4.0"
+    picocolors "^1.0.0"
 
 slash@^2.0.0:
   version "2.0.0"
