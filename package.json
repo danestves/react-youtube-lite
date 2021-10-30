@@ -55,7 +55,7 @@
     }
   ],
   "devDependencies": {
-    "@babel/core": "7.15.8",
+    "@babel/core": "7.16.0",
     "@size-limit/preset-small-lib": "^6.0.3",
     "@storybook/addon-essentials": "6.3.12",
     "@storybook/addon-info": "^5.3.21",
@@ -67,7 +67,7 @@
     "@types/react-dom": "^17.0.10",
     "autoprefixer": "10.3.7",
     "babel-jest": "^27.3.1",
-    "babel-loader": "8.2.2",
+    "babel-loader": "8.2.3",
     "cssnano": "^5.0.8",
     "eslint": "^8.0.1",
     "eslint-config-react-app": "^6.0.0",
