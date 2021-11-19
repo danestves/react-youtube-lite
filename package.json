@@ -88,7 +88,7 @@
     "react-dom": "^17.0.2",
     "react-is": "^17.0.2",
     "rollup-plugin-postcss": "^4.0.1",
-    "size-limit": "^6.0.4",
+    "size-limit": "7.0.3",
     "source-map-support": "^0.5.20",
     "standard-version": "^9.3.2",
     "tslib": "^2.3.1",
