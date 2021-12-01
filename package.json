@@ -99,6 +99,6 @@
     }
   },
   "dependencies": {
-    "dts-cli": "^0.19.6"
+    "dts-cli": "^0.20.0"
   }
 }
