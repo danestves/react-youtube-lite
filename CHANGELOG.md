@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.1](https://github.com/danestves/react-youtube-lite/compare/v1.4.0...v1.4.1) (2021-12-17)
+
+
+### Bug Fixes
+
+* box-sizing content-box for video shadow ([60d8eab](https://github.com/danestves/react-youtube-lite/commit/60d8eab3e27b6a388b2c7c64107ee17e81e23e8c))
+
 ## [1.4.0](https://github.com/danestves/react-youtube-lite/compare/v1.3.1...v1.4.0) (2021-12-17)
 
 ### [1.3.1](https://github.com/danestves/react-youtube-lite/compare/v1.3.0...v1.3.1) (2021-11-19)
