@@ -58,6 +58,12 @@ export interface Props {
    */
   activatedClass?: string;
   /**
+   * A custom thumbnail image url to show instead of the original youtube thumbnail
+   *
+   * @default false
+   */
+  customThumbnail?: string;
+  /**
    * Default classes to put iframe responsive
    *
    * @default "embed-reponsive-item"
@@ -100,7 +106,8 @@ export interface Props {
  * @param url - The URL of the video (we take care of )
  */
 export function getYoutubeId(url: string): string {
-  const regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
+  const regExp =
+    /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
   const match = url.match(regExp);
 
   return match && match[7].length === 11 ? match[7] : '';
@@ -116,6 +123,7 @@ export const ReactYouTubeLite = ({
   poster = 'hqdefault',
   title = 'React YouTube Lite',
   noCookie = false,
+  customThumbnail = '',
   activatedClass = 'lyt-activated',
   iframeClass = 'embed-responsive-item',
   playerClass = 'lty-playbtn',
@@ -126,7 +134,10 @@ export const ReactYouTubeLite = ({
   const [iframe, setIframe] = React.useState(false);
   const videoId = encodeURIComponent(getYoutubeId(url));
   const videoTitle = title;
-  const posterUrl = `https://i.ytimg.com/vi/${videoId}/${poster}.jpg`;
+  const posterUrl =
+    customThumbnail && typeof customThumbnail === 'string'
+      ? customThumbnail
+      : `https://i.ytimg.com/vi/${videoId}/${poster}.jpg`;
   const ytUrl = noCookie
     ? 'https://www.youtube-nocookie.com'
     : 'https://www.youtube.com';

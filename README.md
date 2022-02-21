@@ -18,6 +18,7 @@
   </a>
 </p>
 
+
 A responsive react component to render YouTube videos in a lazyload mode to get a high speed load website.
 
 You can see a [demo here](https://danestves.github.io/react-youtube-lite/?path=/story/component-react-youtube-lite--default)
@@ -56,19 +57,20 @@ const App = () => {
 
 ## 🔗 Props
 
-| Name             | Type      | Default                     | Description                                                                                                                                                                                                                           | Re quired |
-| ---------------- | --------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| `adNetwork`      | `boolean` | `true`                      | If `https://static.doubleclick.net` is enabled or not                                                                                                                                                                                 | No        |
-| `url`            | `string`  |                             | The URL of the video in any format like youtube.com or youtu.be we take care of get the ID of the video                                                                                                                               | Yes       |
-| `playlist`       | `boolean` | `false`                     | If the video URL contains a playlist or not                                                                                                                                                                                           | No        |
-| `poster`         | `string`  | `hqdefault`                 | The different quality to show the poster see: https://developers.google.com/youtube/v3/docs/thumbnails for more information. Available options: `maxresdefault`, `0`, `1`, `2`, `3`, `default`, `hqdefault`, `mqdefault`, `sddefault` | No        |
-| `title`          | `string`  | `React YouTube Lite`        | The `data-title` to insert in the `iframe`                                                                                                                                                                                            | No        |
-| `noCookie`       | `boolean` | `false`                     | If you use GDPR and don't want YouTube cookies enable this option                                                                                                                                                                     | No        |
-| `activatedClass` | `string`  | `lty-playbt`                | The class used to hide the elements when the iframe is already renderer                                                                                                                                                               | No        |
-| `iframeClass`    | `string`  | `embed-reponsive-item`      | Default classes to put iframe responsive                                                                                                                                                                                              | No        |
-| `playerClass`    | `string`  | `lty-playbtn`               | Class for youtube play button                                                                                                                                                                                                         | No        |
-| `wrapperClass`   | `string`  | `ryt-lite embed-responsive` | Default classes to put container responsive                                                                                                                                                                                           | No        |
-| `aspectRatio`    | `string`  | `aspect-ratio-16/9`         | Implements a `padding-bottom` to generate the size of the iframe. Available options: `aspect-ratio-none`, `aspect-ratio-square`, `aspect-ratio-16/9`, `aspect-ratio-4/3`, `aspect-ratio-21/9`                                         | No        |
+| Name              | Type      | Default                     | Description                                                  | Re quired |
+| ----------------- | --------- | --------------------------- | ------------------------------------------------------------ | --------- |
+| `adNetwork`       | `boolean` | `true`                      | If `https://static.doubleclick.net` is enabled or not        | No        |
+| `url`             | `string`  |                             | The URL of the video in any format like youtube.com or youtu.be we take care of get the ID of the video | Yes       |
+| `playlist`        | `boolean` | `false`                     | If the video URL contains a playlist or not                  | No        |
+| `poster`          | `string`  | `hqdefault`                 | The different quality to show the poster see: https://developers.google.com/youtube/v3/docs/thumbnails for more information. Available options: `maxresdefault`, `0`, `1`, `2`, `3`, `default`, `hqdefault`, `mqdefault`, `sddefault` | No        |
+| `title`           | `string`  | `React YouTube Lite`        | The `data-title` to insert in the `iframe`                   | No        |
+| `noCookie`        | `boolean` | `false`                     | If you use GDPR and don't want YouTube cookies enable this option | No        |
+| `activatedClass`  | `string`  | `lty-playbt`                | The class used to hide the elements when the iframe is already renderer | No        |
+| `customThumbnail` | `string`  |                             | A custom thumbnail image url to show instead of the original youtube thumbnail | No        |
+| `iframeClass`     | `string`  | `embed-reponsive-item`      | Default classes to put iframe responsive                     | No        |
+| `playerClass`     | `string`  | `lty-playbtn`               | Class for youtube play button                                | No        |
+| `wrapperClass`    | `string`  | `ryt-lite embed-responsive` | Default classes to put container responsive                  | No        |
+| `aspectRatio`     | `string`  | `aspect-ratio-16/9`         | Implements a `padding-bottom` to generate the size of the iframe. Available options: `aspect-ratio-none`, `aspect-ratio-square`, `aspect-ratio-16/9`, `aspect-ratio-4/3`, `aspect-ratio-21/9` | No        |
 
 ## 🤝 Contributing
 
