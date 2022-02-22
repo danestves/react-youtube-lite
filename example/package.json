@@ -18,7 +18,7 @@
   "devDependencies": {
     "@types/react": "17.0.39",
     "@types/react-dom": "^16.8.4",
-    "parcel": "^1.12.3",
+    "parcel": "2.3.2",
     "typescript": "^3.4.5"
   }
 }
