@@ -13,7 +13,7 @@
     "url": "https://github.com/danestves/react-youtube-lite.git"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "scripts": {
     "start": "dts watch",
