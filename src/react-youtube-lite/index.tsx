@@ -2,7 +2,7 @@
 import * as React from 'react';
 
 // Internals
-import { StyledAspectRatio, StyledYouTubeIcon } from './react-youtube-lite.styles';
+import { StyledAspectRatio, StyledIframe, StyledYouTubeIcon } from './react-youtube-lite.styles';
 import { addPrefetch } from '../utils/add-prefetch';
 import { getSrcSearch } from '../utils/get-src-search';
 import { getYouTubeId } from '../utils/get-youtube-id';
@@ -68,7 +68,7 @@ function RenderReactYouTubeLite(
       {...props}
     >
       {iframe ? (
-        <iframe
+        <StyledIframe
           width={560}
           height={315}
           title={title}
@@ -80,7 +80,7 @@ function RenderReactYouTubeLite(
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
           {...iframeProps}
-        ></iframe>
+        ></StyledIframe>
       ) : (
         <StyledYouTubeIcon />
       )}

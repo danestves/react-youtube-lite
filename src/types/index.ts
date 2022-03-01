@@ -3,6 +3,13 @@ import type * as React from 'react';
 import type * as Stitches from '@stitches/react';
 import type * as YouTube from 'youtube-player/dist/types';
 
+interface IframeProps extends React.ComponentPropsWithoutRef<'iframe'> {
+  /**
+   * It’s like the style attribute, but it supports tokens, media queries, nesting and token-aware values.
+   */
+  css?: Stitches.CSS;
+}
+
 interface ReactYouTubeLiteProps extends React.ComponentPropsWithoutRef<'div'> {
   /**
    * This can be either an url to a video or a video ID.
@@ -27,7 +34,7 @@ interface ReactYouTubeLiteProps extends React.ComponentPropsWithoutRef<'div'> {
   /**
    * Properties of the iframe element.
    */
-  iframeProps?: React.ComponentPropsWithoutRef<'iframe'>;
+  iframeProps?: IframeProps;
   /**
    * If you use GDPR and don't want YouTube cookies enable this option
    *
@@ -67,4 +74,4 @@ interface ReactYouTubeLiteProps extends React.ComponentPropsWithoutRef<'div'> {
   title?: string;
 }
 
-export { ReactYouTubeLiteProps };
+export { IframeProps, ReactYouTubeLiteProps };
