@@ -15,7 +15,7 @@ function RenderReactYouTubeLite(
     css,
     customThumbnail,
     iframeProps,
-    noCookie,
+    noCookie = true,
     playerParameters,
     playlist,
     poster = 'hqdefault',
