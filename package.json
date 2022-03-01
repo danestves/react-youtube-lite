@@ -25,16 +25,19 @@
   "scripts": {
     "clean": "rimraf .parcel-cache dist",
     "prebuild": "npm run clean",
-    "build": "NODE_ENV=production parcel build",
+    "build": "NODE_ENV=production parcel build --reporter @parcel/reporter-bundle-analyzer",
+    "prestart": "npm run clean",
     "start": "parcel watch",
     "test": "jest"
   },
   "dependencies": {
-    "browser-monads-ts": "^1.2.5",
-    "clsx": "^1.1.1"
+    "@radix-ui/react-aspect-ratio": "^0.1.4",
+    "@stitches/react": "^1.2.7",
+    "browser-monads-ts": "^1.2.5"
   },
   "devDependencies": {
     "@parcel/packager-ts": "^2.3.2",
+    "@parcel/reporter-bundle-analyzer": "^2.3.2",
     "@parcel/transformer-typescript-types": "^2.3.2",
     "@types/react": "^17.0.39",
     "parcel": "^2.3.2",
