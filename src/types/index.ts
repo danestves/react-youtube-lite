@@ -12,7 +12,7 @@ interface IframeProps extends React.ComponentPropsWithoutRef<'iframe'> {
   css?: Stitches.CSS;
 }
 
-interface ReactYouTubeLiteProps extends React.ComponentPropsWithoutRef<'div'> {
+interface YouTubeLiteProps extends React.ComponentPropsWithoutRef<'div'> {
   /**
    * This can be either an url to a video or a video ID.
    */
@@ -82,4 +82,4 @@ interface ReactYouTubeLiteProps extends React.ComponentPropsWithoutRef<'div'> {
   title?: string;
 }
 
-export { IframeProps, PosterQuality, ReactYouTubeLiteProps };
+export { IframeProps, PosterQuality, YouTubeLiteProps };
