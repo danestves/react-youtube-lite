@@ -34,12 +34,12 @@ pnpm add react-youtube-lite
 ## 📚 Usage
 
 ```tsx
-import { ReactYouTubeLite } from 'react-youtube-lite';
+import { YouTubeLite } from 'react-youtube-lite';
 
 // Full URL
 const App = () => {
   return (
-    <ReactYouTubeLite
+    <YouTubeLite
       url="https://www.youtube.com/watch?v=DVQTGidS1yk"
       title='React and the Music Industry | Jameyel "J. Dash" Johnson'
     />
@@ -49,16 +49,13 @@ const App = () => {
 // Short URL
 const App = () => {
   return (
-    <ReactYouTubeLite
-      url="https://youtu.be/DVQTGidS1yk"
-      title='React and the Music Industry | Jameyel "J. Dash" Johnson'
-    />
+    <YouTubeLite url="https://youtu.be/DVQTGidS1yk" title='React and the Music Industry | Jameyel "J. Dash" Johnson' />
   );
 };
 
 // ID
 const App = () => {
-  return <ReactYouTubeLite url="DVQTGidS1yk" title='React and the Music Industry | Jameyel "J. Dash" Johnson' />;
+  return <YouTubeLite url="DVQTGidS1yk" title='React and the Music Industry | Jameyel "J. Dash" Johnson' />;
 };
 ```
 

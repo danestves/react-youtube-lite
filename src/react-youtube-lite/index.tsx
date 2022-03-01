@@ -6,9 +6,9 @@ import { StyledAspectRatio, StyledIframe, StyledYouTubeIcon } from './react-yout
 import { addPrefetch } from '../utils/add-prefetch';
 import { getSrcSearch } from '../utils/get-src-search';
 import { getYouTubeId } from '../utils/get-youtube-id';
-import type { ReactYouTubeLiteProps } from '../types';
+import type { YouTubeLiteProps } from '../types';
 
-function RenderReactYouTubeLite(
+function RenderYouTubeLite(
   {
     url,
     adNetwork,
@@ -22,7 +22,7 @@ function RenderReactYouTubeLite(
     poster = 'hqdefault',
     title,
     ...props
-  }: ReactYouTubeLiteProps,
+  }: YouTubeLiteProps,
   ref: React.ForwardedRef<HTMLDivElement>
 ) {
   let [preconnected, setPreconnected] = React.useState(false);
@@ -91,6 +91,6 @@ function RenderReactYouTubeLite(
   );
 }
 
-const ReactYouTubeLite = React.forwardRef(RenderReactYouTubeLite);
+const YouTubeLite = React.forwardRef(RenderYouTubeLite);
 
-export { ReactYouTubeLite };
+export { YouTubeLite };
