@@ -24,9 +24,6 @@ interface ReactYouTubeLiteProps extends React.ComponentPropsWithoutRef<'div'> {
    */
   adNetwork?: boolean;
   /**
-   *
-   */
-  /**
    * The aspect ratio of the video.
    *
    * @default 16/9
