@@ -1,6 +1,7 @@
 // Dependencies
 import type * as React from 'react';
 import type * as Stitches from '@stitches/react';
+import type * as YouTube from 'youtube-player/dist/types';
 
 interface ReactYouTubeLiteProps extends React.ComponentPropsWithoutRef<'div'> {
   /**
@@ -33,6 +34,17 @@ interface ReactYouTubeLiteProps extends React.ComponentPropsWithoutRef<'div'> {
    * @default false
    */
   noCookie?: boolean;
+  /**
+   * By appending parameters to the IFrame URL, you can customize the playback experience in your application.
+   * For example, you can automatically play videos using the [`autoplay`](https://developers.google.com/youtube/player_parameters#autoplay)
+   * parameter or cause a video to play repeatedly using the [`loop`](https://developers.google.com/youtube/player_parameters#loop) parameter.
+   * You can also use the [`enablejsapi`](https://developers.google.com/youtube/player_parameters#enablejsapi) parameter to enable the player
+   * to be controlled via the [IFrame Player API](https://developers.google.com/youtube/iframe_api_reference).
+   *
+   * List of available parameters:
+   * https://developers.google.com/youtube/player_parameters#Parameters
+   */
+  playerParameters?: YouTube.Options['playerVars'];
   /**
    * If the video URL contains a playlist or not
    *
