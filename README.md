@@ -63,11 +63,14 @@ const App = () => {
 
 Since with use Stitches to style the component you can make use of any of the properties that already supported by them.
 
-![Props example of css prop](https://user-images.githubusercontent.com/31737273/156232642-1c13ea1f-021d-4f33-a3ba-3e34027a9b3b.png)
+With the usage of Stitches we are able not only to put basic styles, we can also use media queries, pseudoelements and more.
+
+![Props example of css prop](https://user-images.githubusercontent.com/31737273/156236943-a603c058-341c-4abc-b4b0-bad902423070.png)
 
 This only apply to the main container, if you want to override styles for the iframe element you can do it like this 👇
 
-![Props example of the css prop inside the frameProps attribute](https://user-images.githubusercontent.com/31737273/156233437-d5f89019-3dc2-45c8-94e3-c0ba2f8a61d5.png)
+![Props example of the css prop inside the frameProps attribute](https://user-images.githubusercontent.com/31737273/156237097-e0c2ff11-953e-4f24-9f03-f4f0c210c860.png)
+
 
 ## 📝 Props
 
@@ -85,7 +88,7 @@ This only apply to the main container, if you want to override styles for the if
 
 Also you can pass any other props since it will render a `div` element.
 
-![Props of the div element](https://user-images.githubusercontent.com/31737273/156232297-271024b2-cf52-4b37-ada5-2329a7e11a11.png)
+![Props of the div element](https://user-images.githubusercontent.com/31737273/156236772-d1944667-ad51-4c87-9bac-6e275e883af2.png)
 
 ## 🤝 Contributing
 
