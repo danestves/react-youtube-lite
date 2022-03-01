@@ -18,6 +18,12 @@ interface ReactYouTubeLiteProps extends React.ComponentPropsWithoutRef<'div'> {
    */
   url: string;
   /**
+   * Preconnect or not doubleclick ads, this is the adnetwork from Google.
+   *
+   * @default false
+   */
+  adNetwork?: boolean;
+  /**
    * The aspect ratio of the video.
    *
    * @default 16/9

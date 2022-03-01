@@ -11,6 +11,7 @@ import type { ReactYouTubeLiteProps } from '../types';
 function RenderReactYouTubeLite(
   {
     url,
+    adNetwork,
     aspectRatio = 16 / 9,
     css,
     customThumbnail,
@@ -42,8 +43,10 @@ function RenderReactYouTubeLite(
     addPrefetch('preconnect', 'https://www.google.com');
 
     // These ad-related domains may or may not be on the critical path. Domain-specific throttling could be used to confirm.
-    addPrefetch('preconnect', 'https://googleads.g.doubleclick.net');
-    addPrefetch('preconnect', 'https://static.doubleclick.net');
+    if (adNetwork) {
+      addPrefetch('preconnect', 'https://googleads.g.doubleclick.net');
+      addPrefetch('preconnect', 'https://static.doubleclick.net');
+    }
 
     setPreconnected(true);
   };
