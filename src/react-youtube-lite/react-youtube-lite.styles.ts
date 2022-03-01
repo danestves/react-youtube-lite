@@ -51,4 +51,6 @@ const StyledYouTubeIcon = styled(YouTubeIcon, {
   },
 });
 
-export { StyledAspectRatio, StyledYouTubeIcon };
+const StyledIframe = styled('iframe', {});
+
+export { StyledAspectRatio, StyledIframe, StyledYouTubeIcon };
