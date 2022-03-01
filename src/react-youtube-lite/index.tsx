@@ -3,10 +3,10 @@ import * as React from 'react';
 
 // Internals
 import { StyledAspectRatio, StyledYouTubeIcon } from './react-youtube-lite.styles';
-import { addPrefetch } from '../../utils/add-prefetch';
-import { getYouTubeId } from '../../utils/get-youtube-id';
-import type { ReactYouTubeLiteProps } from '../../types';
-import { getSrcSearch } from '../../utils/get-src-search';
+import { addPrefetch } from '../utils/add-prefetch';
+import { getSrcSearch } from '../utils/get-src-search';
+import { getYouTubeId } from '../utils/get-youtube-id';
+import type { ReactYouTubeLiteProps } from '../types';
 
 function RenderReactYouTubeLite(
   {
@@ -18,7 +18,7 @@ function RenderReactYouTubeLite(
     noCookie,
     playerParameters,
     playlist,
-    poster,
+    poster = 'hqdefault',
     title,
     ...props
   }: ReactYouTubeLiteProps,
@@ -89,4 +89,4 @@ function RenderReactYouTubeLite(
 
 const ReactYouTubeLite = React.forwardRef(RenderReactYouTubeLite);
 
-export default ReactYouTubeLite;
+export { ReactYouTubeLite };

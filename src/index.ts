@@ -1,1 +1,1 @@
-export * from './components/react-youtube-lite';
+export * from './react-youtube-lite';

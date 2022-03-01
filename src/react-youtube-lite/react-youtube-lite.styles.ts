@@ -2,8 +2,8 @@
 import * as AspectRatio from '@radix-ui/react-aspect-ratio';
 
 // Internals
-import { YouTubeIcon } from '../icons/youtube-icon';
-import { styled } from '../../stitches.config';
+import { YouTubeIcon } from '../components/icons/youtube-icon';
+import { styled } from '../stitches.config';
 
 const StyledAspectRatio = styled(AspectRatio.Root, {
   backgroundColor: '#000',
@@ -26,9 +26,15 @@ const StyledAspectRatio = styled(AspectRatio.Root, {
     transition: 'all 0.2s cubic-bezier(0, 0, 0.2, 1)',
     width: '100%',
   },
+  '& iframe': {
+    border: 0,
+    height: '100%',
+    width: '100%',
+  },
 });
 
 const StyledYouTubeIcon = styled(YouTubeIcon, {
+  boxSizing: 'border-box',
   color: '#212121',
   height: 'auto',
   left: '50%',
@@ -36,11 +42,11 @@ const StyledYouTubeIcon = styled(YouTubeIcon, {
   position: 'absolute',
   top: '50%',
   transform: 'translate3d(-50%, -50%, 0)',
-  transition: 'color 0.2s cubic-bezier(0, 0, 0.2, 1)',
-  width: 70,
+  transition: 'all 0.2s cubic-bezier(0, 0, 0.2, 1)',
+  width: 68,
   zIndex: 1,
   [`${StyledAspectRatio}:hover &`]: {
-    backgroundColor: '#f00',
+    color: '#f00',
     opacity: 1,
   },
 });
