@@ -3,6 +3,8 @@ import type * as React from 'react';
 import type * as Stitches from '@stitches/react';
 import type * as YouTube from 'youtube-player/dist/types';
 
+type PosterQuality = 'maxresdefault' | '0' | '1' | '2' | '3' | 'default' | 'hqdefault' | 'mqdefault' | 'sddefault';
+
 interface IframeProps extends React.ComponentPropsWithoutRef<'iframe'> {
   /**
    * It’s like the style attribute, but it supports tokens, media queries, nesting and token-aware values.
@@ -65,7 +67,7 @@ interface ReactYouTubeLiteProps extends React.ComponentPropsWithoutRef<'div'> {
    *
    * @default "hqdefault"
    */
-  poster?: 'maxresdefault' | '0' | '1' | '2' | '3' | 'default' | 'hqdefault' | 'mqdefault' | 'sddefault';
+  poster?: PosterQuality;
   /**
    * The `data-title` to insert in the `iframe`
    *
@@ -74,4 +76,4 @@ interface ReactYouTubeLiteProps extends React.ComponentPropsWithoutRef<'div'> {
   title?: string;
 }
 
-export { IframeProps, ReactYouTubeLiteProps };
+export { IframeProps, PosterQuality, ReactYouTubeLiteProps };
