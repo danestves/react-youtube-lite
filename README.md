@@ -1,5 +1,11 @@
 # react-youtube-lite
 
+![npm bundle size](https://img.shields.io/bundlephobia/min/react-youtube-lite)
+![npm bundle size minzip](https://img.shields.io/bundlephobia/minzip/react-youtube-lite)
+[![npm](https://img.shields.io/npm/dm/react-youtube-lite?color=blue)](https://www.npmjs.com/package/react-youtube-lite)
+[![Twitter Follow](https://img.shields.io/twitter/follow/danestves?style=social)](https://twitter.com/danestves)
+[![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UC6YYVDKZC3mu1iB8IOCFqcw?style=social)](https://www.youtube.com/channel/UC6YYVDKZC3mu1iB8IOCFqcw)
+
 A responsive react component to render YouTube videos in a lazyload mode to get a high speed load website.
 
 Demo: https://codesandbox.io/s/react-youtube-lite-uikk9n?file=/src/App.js
@@ -70,7 +76,6 @@ With the usage of Stitches we are able not only to put basic styles, we can also
 This only apply to the main container, if you want to override styles for the iframe element you can do it like this 👇
 
 ![Props example of the css prop inside the frameProps attribute](https://user-images.githubusercontent.com/31737273/156237097-e0c2ff11-953e-4f24-9f03-f4f0c210c860.png)
-
 
 ## 📝 Props
 
