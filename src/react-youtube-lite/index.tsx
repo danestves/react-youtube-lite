@@ -67,7 +67,6 @@ function RenderReactYouTubeLite(
       ratio={aspectRatio}
       {...props}
     >
-      <StyledYouTubeIcon />
       {iframe ? (
         <iframe
           width={560}
@@ -82,7 +81,9 @@ function RenderReactYouTubeLite(
           allowFullScreen
           {...iframeProps}
         ></iframe>
-      ) : null}
+      ) : (
+        <StyledYouTubeIcon />
+      )}
     </StyledAspectRatio>
   );
 }
