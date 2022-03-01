@@ -16,7 +16,7 @@
     "url": "git+https://github.com/danestves/react-youtube-lite.git"
   },
   "license": "MIT",
-  "author": "Daniel Esteves <me+github@danestves.com> (@danestves)",
+  "author": "Daniel Esteves <me+github@danestves.com> (https://danestves.com)",
   "main": "dist/index.js",
   "module": "dist/react-youtube-lite.mjs",
   "source": "src/index.ts",
@@ -30,7 +30,7 @@
   "scripts": {
     "prebuild": "npm run clean",
     "build": "NODE_ENV=production parcel build",
-    "clean": "rimraf .parcel-cache dist",
+    "clean": "rimraf .parcel-cache dist types",
     "prestart": "npm run clean",
     "start": "parcel watch",
     "test": "jest"
@@ -44,6 +44,7 @@
     "@parcel/packager-ts": "^2.3.2",
     "@parcel/transformer-typescript-types": "^2.3.2",
     "@types/react": "^17.0.39",
+    "@types/youtube-player": "^5.5.5",
     "parcel": "^2.3.2",
     "prettier": "^2.5.1",
     "rimraf": "^3.0.2",

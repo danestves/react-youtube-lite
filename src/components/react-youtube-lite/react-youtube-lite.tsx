@@ -6,6 +6,7 @@ import { StyledAspectRatio, StyledYouTubeIcon } from './react-youtube-lite.style
 import { addPrefetch } from '../../utils/add-prefetch';
 import { getYouTubeId } from '../../utils/get-youtube-id';
 import type { ReactYouTubeLiteProps } from '../../types';
+import { getSrcSearch } from '../../utils/get-src-search';
 
 function RenderReactYouTubeLite(
   {
@@ -15,6 +16,7 @@ function RenderReactYouTubeLite(
     customThumbnail,
     iframeProps,
     noCookie,
+    playerParameters,
     playlist,
     poster,
     title,
@@ -29,9 +31,7 @@ function RenderReactYouTubeLite(
   let posterUrl =
     typeof customThumbnail === 'string' ? customThumbnail : `https://i.ytimg.com/vi/${videoId}/${poster}.jpg`;
   let youtubeUrl = noCookie ? 'https://www.youtube-nocookie.com' : 'https://www.youtube.com';
-  let iframeSrc = !playlist
-    ? `${youtubeUrl}/embed/${videoId}?autoplay=1`
-    : `${youtubeUrl}/embed/videoseries?list=${videoId}`;
+  let iframeSrc = !playlist ? `${youtubeUrl}/embed/${videoId}` : `${youtubeUrl}/embed/videoseries`;
 
   const warmConnections = () => {
     if (preconnected) return;
@@ -73,7 +73,11 @@ function RenderReactYouTubeLite(
           width={560}
           height={315}
           title={title}
-          src={iframeSrc}
+          src={getSrcSearch({
+            url: iframeSrc,
+            videoId,
+            isPlaylist: playlist,
+          })}
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
           {...iframeProps}
