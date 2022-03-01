@@ -1,14 +1,21 @@
 changelog:
   categories:
-    - title: Documentation Changes
+    - title: Breaking Changes 🛠
+      labels:
+        - Semver-Major
+        - breaking-change
+    - title: Exciting New Features 🎉
+      labels:
+        - Semver-Minor
+        - enhancement
+    - title: Bug Fixes 🐛
+      labels:
+        - Semver-Patch
+        - bug-fix
+        - bug
+    - title: Documentation 📖
       labels:
         - documentation
-    - title: New Features
-      labels:
-        - enhancement
-    - title: Bug Fixes
-      labels:
-        - bug
-    - title: Other Changes
+    - title: Other 🤷‍♂️
       labels:
         - '*'
