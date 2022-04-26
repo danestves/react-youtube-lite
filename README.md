@@ -10,6 +10,9 @@ A responsive react component to render YouTube videos in a lazyload mode to get 
 
 Demo: https://codesandbox.io/s/react-youtube-lite-uikk9n?file=/src/App.js
 
+# THIS PROJECT IS DEPRECATED
+react-youtube-lite is not maintained anymore. It has been deprecated in favor of [@lite-embed/react](https://github.com/danestves/lite-embed), please install the latest version of @lite-embed/react instead of react-youtube-lite.
+
 ## 📊 Comparison
 
 | YouTube iframe                                                                                                                              | `react-youtube-lite`                                                                                                                            |
